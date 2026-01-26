@@ -1,6 +1,6 @@
 import OrderList from "../components/OrderList";
 
-const Dasboard = () => {
+const Dashboard = () => {
   return (
     <div>
       <h1>Admin Dashboard</h1>
@@ -9,4 +9,4 @@ const Dasboard = () => {
   );
 };
 
-export default Dasboard;
+export default Dashboard;
