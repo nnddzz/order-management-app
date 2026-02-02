@@ -11,10 +11,16 @@ const OrderList = () => {
   ]);
 
   const addOrder = () => {
-    if (!customer || !total){
-      alert("Name and Total must be filled!");
-      return;
+    if (!customer.trim()) {
+    alert("Nama customer wajib diisi");
+    return;
     }
+
+    if (isNaN(total) || Number(total) <= 0) {
+    alert("Total harus berupa angka lebih dari 0");
+    return;
+    }
+    
     const newOrder = {
       id:Date.now(),
       customer,
